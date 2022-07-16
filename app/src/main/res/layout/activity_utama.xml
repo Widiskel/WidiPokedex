@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Halaman_Utama">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        <RelativeLayout
+            android:paddingVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+               android:layout_centerVertical="true"
+                android:baselineAlignBottom="false"
+                android:contentDescription="@string/pokedexLogo"
+                app:srcCompat="@drawable/pkb"
+                />
+
+            <TextView
+                android:id="@+id/lab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageView2"
+                android:fontFamily="@font/pop"
+                android:text="@string/pokedex"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="35sp" />
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/lab"
+                android:layout_marginStart="40dp"
+                android:layout_alignEnd="@id/FavButton"
+                android:src="@drawable/profil"
+                android:id="@+id/profbutton"
+                android:layout_toStartOf="@id/FavButton"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"
+                android:scaleY="2"
+                android:scaleX="2"/>
+            <CheckBox
+                android:id="@+id/FavButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="20dp"
+                android:button="@drawable/checkbox_main"
+                android:scaleX="2"
+                android:scaleY="2" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Plist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        tools:listitem="@layout/adapter_main" />
+    <ProgressBar
+        android:layout_margin="30dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/cardTop"
+        android:id="@+id/load"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/load"
+        android:id="@+id/info"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="@string/getting_pokemon_data_n_1_of_151_please_wait"
+        android:fontFamily="@font/pop"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Pokedex App</string>
+    <string name="pokedexLogo">pokedexlogo</string>
+    <string name="pokedex">Pokedex</string>
+    <string name="back_button">Back Button</string>
+    <string name="poke_name">Poke Name</string>
+    <string name="poke_image">Poke Image</string>
+    <string name="_001">#001</string>
+    <string name="about">About</string>
+    <string name="weight">weight</string>
+    <string name="_4_0_kg">4,0 kg</string>
+    <string name="height">height</string>
+    <string name="_0_3_m">0,3 m</string>
+    <string name="shed_skin">Shed skin</string>
+    <string name="base_stat">Base Stat</string>
+    <string name="hp">HP</string>
+    <string name="atk">ATK</string>
+    <string name="def">DEF</string>
+    <string name="spatk">SPATK</string>
+    <string name="spdef">SPDEF</string>
+    <string name="spd">SPD</string>
+    <string name="_060">060</string>
+    <string name="_100">100</string>
+    <string name="_125">125</string>
+    <string name="_120">120</string>
+    <string name="getting_pokemon_data_n_1_of_151_please_wait">Getting Pokemon Data \n 1 of 151, Please Wait !</string>
+    <string name="want_to_share">want to share ??</string>
+    <string name="_000">#000</string>
+    <string name="widiabout">Hanya orang biasa yang sedang mempelajari\nBelajar Membuat Aplikasi Android untuk Pemula</string>
+    <string name="widiname">Widianto Eka Saputro</string>
+    <string name="inf">∞</string>
+    <string name="widiphoto">widiphoto</string>
+</resources>
