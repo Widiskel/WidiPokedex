@@ -26,8 +26,11 @@
     <string name="getting_pokemon_data_n_1_of_151_please_wait">Getting Pokemon Data \n 1 of 151, Please Wait !</string>
     <string name="want_to_share">want to share ??</string>
     <string name="_000">#000</string>
-    <string name="widiabout">Hanya orang biasa yang sedang mempelajari\nBelajar Membuat Aplikasi Android untuk Pemula</string>
+    <string name="widiabout">Hanya orang biasa yang sedang \nmempelajari Belajar Membuat Aplikasi \nAndroid untuk Pemula</string>
     <string name="widiname">Widianto Eka Saputro</string>
     <string name="inf">∞</string>
     <string name="widiphoto">widiphoto</string>
+    <string name="buttonprofil">buttonprofil</string>
+    <string name="mail">waputra16@gmai.com</string>
+    <string name="manusia">Manusia</string>
 </resources>

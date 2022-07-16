@@ -12,20 +12,20 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.myapplication.apiretrofit.RetrofitPokeDetail
 import com.example.myapplication.apiretrofit.pokedetail.pDetail
-import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.databinding.ActivityUtamaBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 
 class Halaman_Utama : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityUtamaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         installSplashScreen()
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityUtamaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
@@ -73,11 +73,13 @@ class Halaman_Utama : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                 }
-            }else{
+            } else {
                 showRecyclerList(PNameList.nameList)
             }
         }
-
+        binding.profbutton.setOnClickListener {
+            startActivity(Intent(applicationContext, Halaman_About::class.java))
+        }
 
 
     }

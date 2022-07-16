@@ -27,28 +27,28 @@
                 />
 
             <TextView
+                android:layout_toStartOf="@id/profbutton"
                 android:id="@+id/lab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
                 android:layout_toEndOf="@id/imageView2"
                 android:fontFamily="@font/pop"
                 android:text="@string/pokedex"
-                android:layout_centerVertical="true"
                 android:textColor="@color/black"
                 android:textSize="35sp" />
+
             <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/profbutton"
+                android:contentDescription="@string/buttonprofil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@id/lab"
-                android:layout_marginStart="40dp"
-                android:layout_alignEnd="@id/FavButton"
-                android:src="@drawable/profil"
-                android:id="@+id/profbutton"
+                android:layout_centerInParent="true"
                 android:layout_toStartOf="@id/FavButton"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="30dp"
-                android:scaleY="2"
-                android:scaleX="2"/>
+                android:background="@drawable/profil"
+                android:scaleX="2"
+                android:layout_marginEnd="20dp"
+                android:scaleY="2" />
             <CheckBox
                 android:id="@+id/FavButton"
                 android:layout_width="wrap_content"

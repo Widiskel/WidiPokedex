@@ -17,17 +17,18 @@
             android:layout_height="250dp"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
             android:alpha=".150"
             android:contentDescription="@string/poke_image"
             android:src="@drawable/pkb" />
     </RelativeLayout>
+
     <RelativeLayout
+        android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/appbar">
+        android:layout_height="wrap_content">
 
         <ImageButton
             android:id="@+id/btnback"
@@ -44,8 +45,9 @@
             android:id="@+id/PKName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
             android:layout_toStartOf="@id/PKid"
@@ -53,7 +55,7 @@
             android:fontFamily="@font/pop"
             android:text="@string/widiname"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <TextView
@@ -91,7 +93,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="200dp">
+                android:layout_marginTop="150dp">
 
                 <TextView
                     android:id="@+id/textabout"
@@ -121,6 +123,7 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/pop"
+                        android:padding="10dp"
                         android:text="@string/widiabout"
                         android:textAlignment="center"
                         android:textSize="12sp" />
@@ -376,15 +379,15 @@
     </RelativeLayout>
 
     <com.google.android.material.imageview.ShapeableImageView
-        app:shapeAppearance="@style/roundedImageViewRounded"
         android:id="@+id/PKImg"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:scaleType="centerCrop"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:contentDescription="@string/widiphoto"
-        android:src="@drawable/widi" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/widi"
+        app:shapeAppearance="@style/roundedImageViewRounded" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -411,7 +414,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:fontFamily="@font/pop"
-                    android:text="Manusia"
+                    android:text="@string/manusia"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="15sp"
@@ -440,7 +443,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:fontFamily="@font/pop"
-                    android:text="waputra16@gmai.com"
+                    android:text="@string/mail"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="15sp"
